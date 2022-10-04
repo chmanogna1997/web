@@ -1,0 +1,351 @@
+header{
+    position: fixed;
+    width: 90%;
+    background-color: #E6E6FA;
+    top: 0%;
+    padding: 1rem;
+}
+
+body{
+    border: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.header_tabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right:22px;
+    width: 37%;
+    margin-left: auto;
+}
+
+.header_tabs li {
+    font-size: larger;
+    color: #007bff;
+}
+
+.header_tabs li:hover{
+    color: grey;
+    transform: scale(1.2);
+}
+
+.header_tab_name{
+    color: black;
+}
+
+
+.home_page{
+    display:flex;
+    justify-content: flex-end;
+
+    padding-top: 9rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    padding-bottom:8.5rem;
+}
+
+.profile_image{
+    border: 15px solid lightgray;
+    border-radius: 60%;
+    height: auto;
+    width: 53%;
+}
+
+.image_section{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.hompage_details_section{
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.hompage_details_section ul{
+    list-style: none;
+}
+
+.hompage_details_section ul li{
+    margin:0.3rem
+}
+
+.hompage_details_section ul li i{
+    padding-right:1rem
+}
+
+.hompage_details_section span{
+    font-size: 1.3rem;
+}
+
+.profile_links{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+}
+
+.profile_links i{
+    color: black;
+    font-size: 2.2rem;
+}
+
+.profile_links a i:hover{
+    /* background-color: red; */
+    transform: scale(1.2);
+}
+
+.email{
+    color: black;
+    text-decoration: none;
+}
+
+.hello_div{
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hompage_details_section>:first-child{
+    margin-bottom: 3rem;
+}
+
+/* --------------------------------------------- Education --------------------------------------------------------------- */
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top:3rem;
+}
+
+.list_of_educations{
+    margin-left: 4rem;
+}
+
+.list_of_educations >  div{
+    border-bottom: 2px solid grey;
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 6px #888888;
+}
+
+.list_of_educations > div > div {
+    margin-left: 1rem;
+}
+
+#education{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* --------------------------------------------- Skills --------------------------------------------------------------- */
+
+.image_div img{
+width: 100px;
+}
+
+.row {
+    margin-left: 10rem;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	align-items: stretch;
+}
+
+.image_div {
+	padding-left: 4rem !important;
+	padding-right: 4rem !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.image_div p {
+	margin-left: 1.2rem !important;
+}
+
+/* --------------------------------------------- Experience --------------------------------------------------------------- */
+
+.experience_list{
+    margin-left:7rem
+}
+.experience_list > div {
+    margin-top: 0.5rem;
+
+    background-color: #fff;
+    box-shadow: 1px 1px 6px #888888;
+
+    padding: 0.8rem;
+}
+
+.exp_name{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.experience_list h4{
+    color: #999;
+    margin-top: 0px;
+    font-weight: 100;
+    line-height: 1px;
+}
+
+.experience_list li{
+    font-size: 18px;
+    line-height: 23px;
+    margin: 2px 0;
+}
+
+.TA_desc{
+    font-size: 18px;
+    line-height: 23px;
+    margin: 2px 0;
+    padding-left: 40px;
+}
+
+/* ------------------------------------------------ css for tablet ----------------------------------------------------  */
+@media only screen and (min-width: 768px){
+    body{
+        border: none ;
+        margin: 0%;
+    }
+    header{
+        width: 100%;
+    }
+    .header_tabs{
+        margin: 0px !important;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        width: 100%;
+
+        justify-content: space-around;
+    }
+    .profile_image{
+        width: 72%;
+    }
+
+    .list_of_educations {
+        margin-left: 0.1rem;
+    }
+
+    .row {
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    .experience_list {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .experience_list li {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .experience_list h4{
+        font-size: 14px;
+    }
+
+   .tools_used{
+    font-size: 14px;
+   }
+   .TA_skills{
+    font-size: 14px;
+   }
+   .TA_desc{
+    font-size: 14px;
+   }
+   .work_branch{
+    font-size: 15px;
+   }
+
+}
+
+/* ------------------------------------------------ css for mobile ---------------------------------------------------- */
+@media only screen and (max-device-width: 480px) {
+    body{
+        border: none ;
+        margin: 0%;
+    }
+
+    header{
+        width: 100%;
+    }
+    .header_tabs {
+        width: 89% !important;
+        margin-left:0%;
+    }
+    .home_page{
+        flex-direction: column;
+    }
+    .image_section{
+        justify-content:center
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .list_of_educations {
+        margin-left: 0rem;
+    }
+    .experience_list {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .experience_list li {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 6px 0;
+    }
+    .experience_list h4{
+        line-height: normal;
+        font-size: 13px;
+    }
+    .tools_used{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .experience_list > div{
+        box-shadow: 1px 1px 6px #888888;
+        margin: 1rem
+    }
+    .header_tabs li{
+        font-size: x-large;
+    }
+    .work_branch{
+        font-size: 13px;
+    }
+    .TA_desc{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .exp_name{
+        font-size: 14px;
+    }
+    .TA_skills{
+        font-size: 12px;
+    }
+}
+
+
+/* ------------------------------------------------ css for mobile ---------------------------------------------------- */
+
+
+
