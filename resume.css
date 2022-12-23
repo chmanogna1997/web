@@ -218,13 +218,15 @@ width: 100px;
 }
 
 /* ------------------------------------------------ css for tablet ----------------------------------------------------  */
-@media only screen and (min-width: 768px){
+@media only screen and (max-device-width: 768px){
     body{
         border: none ;
         margin: 0%;
+        background-color: red;
     }
     header{
         width: 100%;
+        
     }
     .header_tabs{
         margin: 0px !important;
