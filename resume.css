@@ -217,6 +217,12 @@ width: 100px;
     padding-left: 40px;
 }
 
+h5 {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 2px 0;
+}
+
 /* ------------------------------------------------ css for tablet ----------------------------------------------------  */
 @media only screen and (max-device-width: 768px){
     body{
